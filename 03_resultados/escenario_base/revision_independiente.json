@@ -1,0 +1,79 @@
+{
+  "checks": {
+    "celdas_unicas": true,
+    "valores_finitos": true,
+    "subconjuntos": true,
+    "error_identidad_celdas": 5.684341886080802e-14,
+    "todas_celdas_positivas": true,
+    "error_poblacion_fuente": 5.684341886080802e-14,
+    "error_calibracion_por_nivel_rwi": 1.4551915228366852e-11,
+    "error_igualdad_empates": 8.90287843446913e-13,
+    "tasas_originales_preservadas": true,
+    "error_promedios_imputados": 0.0,
+    "inundacion_diferencias_mascara": 0,
+    "inundacion_diferencias_cobertura": 0,
+    "sismo_diferencias_mascara": 0,
+    "sismo_diferencias_cobertura": 0,
+    "viento_diferencias_mascara": 0,
+    "viento_diferencias_cobertura": 0,
+    "calor_diferencias_mascara": 0,
+    "calor_diferencias_cobertura": 0,
+    "diferencias_numero_amenazas": 0,
+    "error_agregados_nacionales": 4.6566128730773926e-09,
+    "error_agregados_municipales": 2.9103830456733704e-10,
+    "error_sensibilidad": 9.313225746154785e-10,
+    "escenarios_sensibilidad": 180,
+    "principal_unico": true,
+    "principal_correcto": true,
+    "hashes_insumos_coinciden": true
+  },
+  "celdas": 971376,
+  "municipios": 266,
+  "total": 6352400.968259583,
+  "pobre": 1759960.1786898328,
+  "imputaciones": [
+    {
+      "municipio": "Embalse Cerron Grande",
+      "tasa": 34.1123131495238,
+      "metodo": "limite_compartido"
+    },
+    {
+      "municipio": "La Libertad",
+      "tasa": 33.304090438,
+      "metodo": "limite_compartido"
+    },
+    {
+      "municipio": "Lago de Llopango",
+      "tasa": 31.41084542857143,
+      "metodo": "limite_compartido"
+    },
+    {
+      "municipio": "San Martín",
+      "tasa": 28.75769716666667,
+      "metodo": "limite_compartido"
+    },
+    {
+      "municipio": "Lago de Coatepeque",
+      "tasa": 25.45931667,
+      "metodo": "limite_compartido"
+    },
+    {
+      "municipio": "Lago de Guija",
+      "tasa": 23.60757577,
+      "metodo": "limite_compartido"
+    }
+  ],
+  "checks_espaciales": {
+    "asignaciones_contenidas_incorrectas": 0,
+    "marcas_fuera_limites_incorrectas": 0,
+    "asignaciones_cercanas_incorrectas": 0,
+    "error_distancias_municipio": 1.880815503341182e-09,
+    "rwi_asignados_incorrectos": 0,
+    "error_distancias_rwi": 2.825572664733045e-09
+  },
+  "pruebas_unitarias": {
+    "ejecutadas": 6,
+    "resultado": "OK"
+  },
+  "alcance": "Verificación de implementación y coherencia; no validación independiente de las fuentes."
+}

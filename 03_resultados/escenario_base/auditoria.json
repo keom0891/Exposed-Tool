@@ -1,0 +1,203 @@
+{
+  "fecha_utc": "2026-10-21T20:51:59.623020+00:00",
+  "parametros": {
+    "inundacion": {
+      "umbral": 0.1,
+      "operador": ">=",
+      "unidad": "m",
+      "crs": "EPSG:4326",
+      "resolucion": [
+        0.0008333333356347339,
+        0.0008333333333325754
+      ],
+      "dimensiones": [
+        2931,
+        1559
+      ],
+      "poblacion_sin_dato": 6276128.15689025,
+      "poblacion_fuera_extension": 15.897706027142704,
+      "celdas_sin_dato": 944098
+    },
+    "sismo": {
+      "umbral": 0.1,
+      "operador": ">=",
+      "unidad": "g",
+      "crs": "EPSG:4326",
+      "resolucion": [
+        0.001,
+        0.001
+      ],
+      "dimensiones": [
+        2549,
+        1468
+      ],
+      "poblacion_sin_dato": 7103.110919991444,
+      "poblacion_fuera_extension": 34.43784284591675,
+      "celdas_sin_dato": 4140
+    },
+    "viento": {
+      "umbral": 25.0,
+      "operador": ">=",
+      "unidad": "m/s",
+      "crs": "EPSG:4326",
+      "resolucion": [
+        0.01844443999999612,
+        0.01844443999999612
+      ],
+      "dimensiones": [
+        132,
+        69
+      ],
+      "poblacion_sin_dato": 72882.80204185762,
+      "poblacion_fuera_extension": 897.6699700051104,
+      "celdas_sin_dato": 15674
+    },
+    "calor": {
+      "umbral": 30.0,
+      "operador": ">",
+      "unidad": "°C WBGT",
+      "crs": "EPSG:4326",
+      "resolucion": [
+        0.24930747922437674,
+        0.24934383202099739
+      ],
+      "dimensiones": [
+        11,
+        6
+      ],
+      "poblacion_sin_dato": 0.0,
+      "poblacion_fuera_extension": 0.0,
+      "celdas_sin_dato": 0
+    }
+  },
+  "crs_distancias": "EPSG:32616",
+  "soporte": "Centros de celdas positivas WorldPop 2025; muestreo nativo por celda contenedora",
+  "nodata": "Cero exposición; población conservada",
+  "pobreza": "Ranking RWI ponderado por población y fracción común en empates del corte",
+  "fuente_pobreza": "Mapa de pobreza (2019)",
+  "imputacion": "Promedio simple de vecinos con tasa original y límite compartido",
+  "geografia": "266 unidades de la capa de pobreza, incluidos cuerpos de agua; no implica geografía municipal vigente",
+  "asignacion_limites": {
+    "celdas": 14762,
+    "poblacion": 28510.898772877514,
+    "distancia_max_m": 6678.987250813676
+  },
+  "rwi_distancias_m": {
+    "p50": 955.0267853976345,
+    "p95": 1461.4128624286168,
+    "max": 8150.9729420368585
+  },
+  "rwi_empates_cercania": 0,
+  "verificaciones": {
+    "calibracion_error_max_personas": 4.3655745685100555e-11,
+    "conservacion_poblacion_error": 9.313225746154785e-10,
+    "identidad_grupos_error_max": 3.7834979593753815e-10,
+    "union_categorias_error_max": 7.275957614183426e-11,
+    "categorias_base_error_max": 7.275957614183426e-11
+  },
+  "totales": {
+    "base_total": 6352400.968259584,
+    "inundacion_total": 76272.81136933177,
+    "sismo_total": 6345297.857339593,
+    "viento_total": 170.85990421475435,
+    "calor_total": 5131930.019341282,
+    "union_total": 6346358.625765589,
+    "numero_0_total": 6042.342493994878,
+    "numero_1_total": 1210256.6365004275,
+    "numero_2_total": 5064891.056341491,
+    "numero_3_total": 71210.93292367004,
+    "numero_4_total": 0.0,
+    "base_pobre": 1759960.1786898323,
+    "inundacion_pobre": 38567.07081697893,
+    "sismo_pobre": 1756161.5106613464,
+    "viento_pobre": 20.123237660969608,
+    "calor_pobre": 1339398.1755313082,
+    "union_pobre": 1756428.7086668212,
+    "numero_0_pobre": 3531.470023010943,
+    "numero_1_pobre": 415563.9051236925,
+    "numero_2_pobre": 1304011.435505785,
+    "numero_3_pobre": 36853.368037344015,
+    "numero_4_pobre": 0.0,
+    "base_no_pobre": 4592440.789569752,
+    "inundacion_no_pobre": 37705.74055235284,
+    "sismo_no_pobre": 4589136.346678247,
+    "viento_no_pobre": 150.73666655378474,
+    "calor_no_pobre": 3792531.8438099744,
+    "union_no_pobre": 4589929.917098768,
+    "numero_0_no_pobre": 2510.8724709839353,
+    "numero_1_no_pobre": 794692.7313767353,
+    "numero_2_no_pobre": 3760879.6208357066,
+    "numero_3_no_pobre": 34357.56488632603,
+    "numero_4_no_pobre": 0.0
+  },
+  "archivos": [
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\poblacion\\slv_pop_2025_CN_100m_R2025A_v1.tif",
+      "sha256": "2dacb6610be5e1b16054458fea1f9e473153d63f4ef9455e3db9d4a5a72f1c5e",
+      "bytes": 5751825
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\rwi\\slv_relative_wealth_index.csv",
+      "sha256": "279594a64a1ed1fdfdc4f160eb17761de8c777f532324587847db701aeaf0693",
+      "bytes": 121886
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\pobreza\\slv_pov_2.csv",
+      "sha256": "b69b3fb271832311f7fb4e5834e802f9bc5a83e15645fcdb8ec097a97aa27315",
+      "bytes": 30795
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\pobreza\\slv_pov_2.cpg",
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "bytes": 5
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\pobreza\\slv_pov_2.dbf",
+      "sha256": "eaeb0ae2368273e8b3d237c0779875c0c52521083a8715ec0720c81d357bca69",
+      "bytes": 187980
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\pobreza\\slv_pov_2.prj",
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "bytes": 145
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\pobreza\\slv_pov_2.shp",
+      "sha256": "3eeab493a7c6c7077b1aef7bb7ad17ddc0f8ce2e2d847764de98f60bdee96a5b",
+      "bytes": 1508652
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\pobreza\\slv_pov_2.shx",
+      "sha256": "6b27f790e9a67ec96891f38668e122e33c2553699c90ee00b15a99df6fe3d2b1",
+      "bytes": 2228
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\amenazas\\Inundacion_PR100.tif",
+      "sha256": "1bbf958c3b915f2021f88c7221d026777241c5c2576ecfd897938b544f62e4e5",
+      "bytes": 18287454
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\amenazas\\Sismo_PR100.tif",
+      "sha256": "b8470fe81bc555c3ec09be2b8920150db4728eada5655f0d683d124cdbb4f333",
+      "bytes": 14976920
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\amenazas\\Viento_PR100.tif",
+      "sha256": "d15347824912af668eca7d5854630896074c160ed1e6a5ebdfc4dbf1169e5d12",
+      "bytes": 36840
+    },
+    {
+      "ruta": "C:\\Users\\keom0\\Dropbox\\BID\\10 - Needs (GaIA)\\04 - Casos de uso\\El Salvador\\01_insumos\\amenazas\\Teperature_PR100.tif",
+      "sha256": "83961bb270a3563a5ee7fb2decb28933951c618293fdfb7b101d34a3ce818f07",
+      "bytes": 1162
+    }
+  ],
+  "versiones": {
+    "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:36:12) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "pandas": "2.1.4",
+    "geopandas": "1.1.3",
+    "rasterio": "1.4.4"
+  },
+  "duracion_segundos": 50.940428018569946
+}

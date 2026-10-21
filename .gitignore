@@ -1,0 +1,48 @@
+# Python: bytecode y caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Entornos virtuales y configuracion local
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.python-version
+
+# Distribuciones de paquetes Python
+build/
+*.egg-info/
+.eggs/
+
+# Editores y sistema operativo
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Registros y archivos temporales
+*.log
+*.tmp
+*.temp
+*.bak
+*.lock
+*.gpkg-wal
+*.gpkg-shm
+.ipynb_checkpoints/
+
+# Metadatos locales de publicacion
+.openai/
+
+# Los insumos, resultados y entregables actuales se conservan versionables.

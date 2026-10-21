@@ -1,0 +1,2 @@
+# Dependencias del motor geoespacial
+-r 02_codigo/requisitos.txt

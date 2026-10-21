@@ -1,0 +1,21 @@
+{
+  "html_autonomo": true,
+  "ids_unicos": true,
+  "datos_html_coinciden_con_fuentes": true,
+  "resultados_y_auditoria_coinciden": true,
+  "porcentajes_y_categorias_sensibilidad_coherentes": true,
+  "escenarios": 180,
+  "zip_coincide": true,
+  "carpetas_legacy_ausentes": true,
+  "entrada_unica": "index.html",
+  "configuracion_windows_verificada": true,
+  "hash_html": "ed5725d8b233c06b9a249c1532a176fd9ab94bb3ed53b41eae45ab402a3f09c3",
+  "fecha_utc": "2026-10-21T22:09:30.897171+00:00",
+  "codigo_sha256": {
+    "analizar.py": "32e75dda71b4a0d0090de74108270d4370b06e5fd44e40d6f70dca8454740095",
+    "calibracion.py": "911e0ab946b2a2048d1c1889b939e209df5adf7fae3df005d2eb09729b625070",
+    "preparar_entrega.py": "c9ee738a9e3c8c06f94f4f825376cc4e80cd495cf7d835ad92018afb7739c342",
+    "sensibilidad.py": "66b57b12ac8a2fe528e8ed28230d379e559f5fd634d38807eabf0bea7c5a21e1",
+    "verificar.py": "3a61a3a07effb707249122e7d4f2ee1d6b2e136461120e05f9e63294619c1772"
+  }
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "codigo": "SV0399",
+    "municipio": "Embalse Cerron Grande",
+    "tasa": 34.1123131495238,
+    "metodo": "limite_compartido",
+    "vecinos": [
+      {
+        "ADM2_PCODE": "SV0201",
+        "ADM2_EN": "Cinquera"
+      },
+      {
+        "ADM2_PCODE": "SV0204",
+        "ADM2_EN": "Jutiapa"
+      },
+      {
+        "ADM2_PCODE": "SV0206",
+        "ADM2_EN": "Sensuntepeque"
+      },
+      {
+        "ADM2_PCODE": "SV0303",
+        "ADM2_EN": "Azacualpa"
+      },
+      {
+        "ADM2_PCODE": "SV0307",
+        "ADM2_EN": "Chalatenango"
+      },
+      {
+        "ADM2_PCODE": "SV0310",
+        "ADM2_EN": "El Paraíso"
+      },
+      {
+        "ADM2_PCODE": "SV0313",
+        "ADM2_EN": "La Reina"
+      },
+      {
+        "ADM2_PCODE": "SV0315",
+        "ADM2_EN": "Nombre de Jesús"
+      },
+      {
+        "ADM2_PCODE": "SV0316",
+        "ADM2_EN": "Nueva Concepción"
+      },
+      {
+        "ADM2_PCODE": "SV0319",
+        "ADM2_EN": "Potonico"
+      },
+      {
+        "ADM2_PCODE": "SV0320",
+        "ADM2_EN": "San Antonio de la Cruz"
+      },
+      {
+        "ADM2_PCODE": "SV0323",
+        "ADM2_EN": "San Francisco Lempa"
+      },
+      {
+        "ADM2_PCODE": "SV0326",
+        "ADM2_EN": "San Isidro Labrador"
+      },
+      {
+        "ADM2_PCODE": "SV0327",
+        "ADM2_EN": "San José Cancasque"
+      },
+      {
+        "ADM2_PCODE": "SV0329",
+        "ADM2_EN": "San Luis del Carmen"
+      },
+      {
+        "ADM2_PCODE": "SV0330",
+        "ADM2_EN": "San Miguel de Mercedes"
+      },
+      {
+        "ADM2_PCODE": "SV0331",
+        "ADM2_EN": "San Rafael"
+      },
+      {
+        "ADM2_PCODE": "SV0332",
+        "ADM2_EN": "Santa Rita"
+      },
+      {
+        "ADM2_PCODE": "SV0333",
+        "ADM2_EN": "Tejutla"
+      },
+      {
+        "ADM2_PCODE": "SV0415",
+        "ADM2_EN": "Suchitoto"
+      },
+      {
+        "ADM2_PCODE": "SV1005",
+        "ADM2_EN": "El Paisnal"
+      }
+    ],
+    "tasas_vecinos": [
+      38.7866394,
+      44.72964763,
+      33.981991,
+      23.94366197,
+      24.9116546,
+      29.00974957,
+      32.46944796,
+      28.91566265,
+      28.60439906,
+      32.21941992,
+      40.7227616,
+      29.93039443,
+      56.44290123,
+      55.05425471,
+      24.63768116,
+      32.52915159,
+      32.90337711,
+      17.99799465,
+      37.30893592,
+      36.51658194,
+      34.74226804
+    ]
+  },
+  {
+    "codigo": "SV0509",
+    "municipio": "La Libertad",
+    "tasa": 33.304090438,
+    "metodo": "limite_compartido",
+    "vecinos": [
+      {
+        "ADM2_PCODE": "SV0505",
+        "ADM2_EN": "Comasagua"
+      },
+      {
+        "ADM2_PCODE": "SV0506",
+        "ADM2_EN": "Huizúcar"
+      },
+      {
+        "ADM2_PCODE": "SV0510",
+        "ADM2_EN": "Nueva San Salvador"
+      },
+      {
+        "ADM2_PCODE": "SV0515",
+        "ADM2_EN": "San José Villanueva"
+      },
+      {
+        "ADM2_PCODE": "SV0519",
+        "ADM2_EN": "Tamanique"
+      },
+      {
+        "ADM2_PCODE": "SV0522",
+        "ADM2_EN": "Zaragoza"
+      },
+      {
+        "ADM2_PCODE": "SV0605",
+        "ADM2_EN": "Olocuilta"
+      },
+      {
+        "ADM2_PCODE": "SV0614",
+        "ADM2_EN": "San Luis Talpa"
+      },
+      {
+        "ADM2_PCODE": "SV1010",
+        "ADM2_EN": "Panchimalco"
+      },
+      {
+        "ADM2_PCODE": "SV1011",
+        "ADM2_EN": "Rosario de Mora"
+      }
+    ],
+    "tasas_vecinos": [
+      30.0673968,
+      29.79253112,
+      36.35073464,
+      41.42351901,
+      34.93339287,
+      26.08579803,
+      20.35422251,
+      41.42560554,
+      35.84933171,
+      36.75837215
+    ]
+  },
+  {
+    "codigo": "SV1099",
+    "municipio": "Lago de Llopango",
+    "tasa": 31.41084542857143,
+    "metodo": "limite_compartido",
+    "vecinos": [
+      {
+        "ADM2_PCODE": "SV0401",
+        "ADM2_EN": "Candelaria"
+      },
+      {
+        "ADM2_PCODE": "SV0410",
+        "ADM2_EN": "San Pedro Perulapán"
+      },
+      {
+        "ADM2_PCODE": "SV0608",
+        "ADM2_EN": "San Emigdio"
+      },
+      {
+        "ADM2_PCODE": "SV0609",
+        "ADM2_EN": "San Francisco Chinameca"
+      },
+      {
+        "ADM2_PCODE": "SV0615",
+        "ADM2_EN": "San Miguel Tepezontes"
+      },
+      {
+        "ADM2_PCODE": "SV1007",
+        "ADM2_EN": "Ilopango"
+      },
+      {
+        "ADM2_PCODE": "SV1015",
+        "ADM2_EN": "Santiago Texacuangos"
+      }
+    ],
+    "tasas_vecinos": [
+      25.56778736,
+      34.45562262,
+      45.95457771,
+      35.26465412,
+      39.81900452,
+      17.27867179,
+      21.53559988
+    ]
+  },
+  {
+    "codigo": "SV1013",
+    "municipio": "San Martín",
+    "tasa": 28.75769716666667,
+    "metodo": "limite_compartido",
+    "vecinos": [
+      {
+        "ADM2_PCODE": "SV0406",
+        "ADM2_EN": "Oratorio de Concepción"
+      },
+      {
+        "ADM2_PCODE": "SV0407",
+        "ADM2_EN": "San Bartolomé Perulapía"
+      },
+      {
+        "ADM2_PCODE": "SV0409",
+        "ADM2_EN": "San José Guayabal"
+      },
+      {
+        "ADM2_PCODE": "SV0410",
+        "ADM2_EN": "San Pedro Perulapán"
+      },
+      {
+        "ADM2_PCODE": "SV1007",
+        "ADM2_EN": "Ilopango"
+      },
+      {
+        "ADM2_PCODE": "SV1018",
+        "ADM2_EN": "Tonacatepeque"
+      }
+    ],
+    "tasas_vecinos": [
+      37.64673002,
+      29.73442542,
+      35.24731183,
+      34.45562262,
+      17.27867179,
+      18.18342132
+    ]
+  },
+  {
+    "codigo": "SV1299",
+    "municipio": "Lago de Coatepeque",
+    "tasa": 25.45931667,
+    "metodo": "limite_compartido",
+    "vecinos": [
+      {
+        "ADM2_PCODE": "SV1204",
+        "ADM2_EN": "El Congo"
+      },
+      {
+        "ADM2_PCODE": "SV1210",
+        "ADM2_EN": "Santa Ana"
+      }
+    ],
+    "tasas_vecinos": [
+      28.91118543,
+      22.00744791
+    ]
+  },
+  {
+    "codigo": "SV1298",
+    "municipio": "Lago de Guija",
+    "tasa": 23.60757577,
+    "metodo": "limite_compartido",
+    "vecinos": [
+      {
+        "ADM2_PCODE": "SV1207",
+        "ADM2_EN": "Metapán"
+      },
+      {
+        "ADM2_PCODE": "SV1208",
+        "ADM2_EN": "San Antonio Pajonal"
+      }
+    ],
+    "tasas_vecinos": [
+      21.0711613,
+      26.14399024
+    ]
+  }
+]
