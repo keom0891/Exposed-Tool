@@ -21,7 +21,7 @@ La implementación y los resultados son coherentes con los criterios documentado
 2. **Muestreo por centro de celda.** Se utiliza la grilla original de WorldPop, sin agregar a hexágonos ni repartir población por el área exacta de intersección. Esto es una aproximación puntual de la exposición.
 3. **Ausencia de datos.** NoData y ausencia de cobertura se computan como cero exposición, conservando población. Esto no demuestra ausencia de peligro; puede reducir la exposición estimada. La cobertura figura en la metodología y en las descargas.
 4. **Resoluciones distintas.** WBGT ronda 27 km y viento 2 km. Las celdas WorldPop de unos 100 m no añaden detalle real a esas fuentes.
-5. **Definiciones adoptadas.** Las capas se utilizan como profundidad en m, PGA en g, ráfaga de 3 segundos en m/s y WBGT en °C, todas RP100. La revisión no verifica independientemente esas definiciones ni los modelos de origen. El archivo de calor tiene un nombre genérico; su identificación como WBGT procede de la definición adoptada para el ejercicio. El tratamiento previo de WBGT por vecino válido cercano se documenta entre las limitaciones.
+5. **Definiciones adoptadas.** Las capas se utilizan como profundidad en m, PGA en g, velocidad del viento máxima en m/s y WBGT en °C, todas RP100. La revisión no verifica independientemente esas definiciones ni los modelos de origen. El archivo de calor tiene un nombre genérico; su identificación como WBGT procede de la definición adoptada para el ejercicio. El tratamiento previo de WBGT por vecino válido cercano se documenta entre las limitaciones.
 6. **Exposición potencial.** La unión de mapas marginales RP100 no equivale a un evento conjunto RP100, simultaneidad temporal, probabilidad individual de daño ni población damnificada. No se han propagado incertidumbres de las fuentes.
 7. **Geografía de la fuente.** Se conservan 266 polígonos, incluidos cuatro cuerpos de agua sin población asignada; no se representa una actualización de la división administrativa.
 
@@ -60,7 +60,7 @@ El RWI ordena riqueza relativa, según la [descripción del proyecto original](h
 
 ### Condiciones e interpretación
 
-Las definiciones WBGT, ráfagas de 3 segundos, RP100 y tasas de pobreza referidas a personas fueron confirmadas para el ejercicio. Esa confirmación permite aplicar los insumos conforme a sus definiciones; no supone una auditoría independiente de los modelos que generaron los mapas.
+Las definiciones WBGT, velocidad del viento máxima, RP100 y tasas de pobreza referidas a personas fueron confirmadas para el ejercicio. Esa confirmación permite aplicar los insumos conforme a sus definiciones; no supone una auditoría independiente de los modelos que generaron los mapas.
 
 Se mantienen visibles las siguientes condiciones: tasas de pobreza de 2019 sobre población de 2025; asignación al municipio más cercano de los centros fuera de límites; uso del RWI más cercano; imputación de tasas con vecinos; cero exposición cuando no hay dato válido; incertidumbre de las fuentes no propagada. NoData no debe interpretarse como ausencia de peligro demostrada.
 

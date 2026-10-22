@@ -126,7 +126,7 @@ Las pruebas cubren ponderación por habitantes, empates en el corte de RWI, tasa
 | Tasas de pobreza 2019 | CSV con `ADM2_PCODE` y `POVERTY_RATE` | Proporción de personas pobres, expresada entre 0 y 100. |
 | Inundación RP100 | GeoTIFF, profundidad en metros | Intensidad de inundación. |
 | Sismo RP100 | GeoTIFF, PGA en g | Aceleración máxima del terreno. |
-| Viento RP100 | GeoTIFF, m/s | Ráfaga máxima de 3 segundos. |
+| Viento RP100 | GeoTIFF, m/s | Velocidad del viento máxima. |
 | Calor RP100 | GeoTIFF, WBGT en °C | Índice de estrés térmico. |
 
 Los nombres de los archivos se encuentran definidos en `analizar.py`. Los componentes de cada shapefile deben conservarse juntos. Las definiciones de las variables, sus unidades y RP100 corresponden a las confirmadas para este caso de estudio.
@@ -173,7 +173,7 @@ Para cada centro WorldPop se consulta el píxel contenedor en la grilla nativa d
 |---|---|
 | Inundación | Profundidad **≥0,1 m** |
 | Sismo | PGA **≥0,10 g** |
-| Viento huracanado | Ráfaga de 3 segundos **≥20 m/s** |
+| Viento huracanado | Velocidad del viento máxima **≥20 m/s** |
 | Calor | WBGT **≥30 °C** |
 
 La ausencia de cobertura y NoData se computan como cero exposición a esa amenaza, conservando la población. Los indicadores de cobertura se guardan para reconocer esta limitación.
