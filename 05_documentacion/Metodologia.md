@@ -30,7 +30,7 @@ El análisis utiliza los cuatro mapas como escenarios RP100; no verifica de form
 |---|---|
 | Inundación | Profundidad ≥0,1 m |
 | Sismo | PGA ≥0,10 g |
-| Viento huracanado | Viento huracanado ≥20 m/s |
+| Viento huracanado | Viento huracanado ≥33 m/s |
 | Calor | WBGT ≥30 °C |
 
 Ausencia de cobertura o NoData se interpreta como cero exposición a esa amenaza, como criterio operativo. La población se conserva. Los indicadores de dato válido se mantienen en el detalle.

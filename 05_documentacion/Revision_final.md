@@ -1,6 +1,6 @@
 # Revisión final de la metodología
 
-Fecha: 21 de octubre de 2026.
+Fecha: 22 de octubre de 2026.
 
 La implementación y los resultados son coherentes con los criterios documentados para este ejercicio. La revisión reconstruyó los cálculos desde los insumos y el detalle por celda. Los controles verifican la implementación; no constituyen una validación externa de las fuentes ni de las capacidades predictivas de los modelos.
 
@@ -27,16 +27,16 @@ La implementación y los resultados son coherentes con los criterios documentado
 
 ## Resultado del escenario base
 
-Inundación ≥0,1 m; PGA ≥0,10 g; viento huracanado ≥20 m/s; WBGT ≥30 °C.
+Inundación ≥0,1 m; PGA ≥0,10 g; viento huracanado ≥33 m/s; WBGT ≥30 °C.
 
-- Al menos una amenaza: 6.349.122,17 habitantes, **99,95%** de la población modelada.
-- Dos o más amenazas: 5.351.946,16 habitantes, **84,25%**.
+- Al menos una amenaza: 6.346.358,63 habitantes, **99,90%** de la población modelada.
+- Dos o más amenazas: 5.135.966,37 habitantes, **80,85%**.
 
 Los porcentajes de población pobre y no pobre usan como denominador la población de su propio grupo. Los conteos se calculan sin redondear; el dashboard redondea únicamente para presentación.
 
 ## Dictamen de la revisión integral del repositorio
 
-**Fecha: 21 de octubre de 2026.** La carpeta de la herramienta se revisó en su ubicación GitHub y las verificaciones se ejecutaron sobre los insumos de ese repositorio.
+**Fecha: 22 de octubre de 2026.** La carpeta de la herramienta se revisó en su ubicación GitHub y las verificaciones se ejecutaron sobre los insumos de ese repositorio.
 
 **Conclusión:** la implementación es coherente y el método es aceptable para estimar población potencialmente expuesta que supera los umbrales operativos definidos, a escala nacional y municipal y con la aproximación por centro de celda. La distribución por condición de pobreza es una estimación condicionada al ranking RWI y a las tasas municipales; no constituye una observación individual ni una validación independiente de la localización de la pobreza.
 
@@ -66,9 +66,14 @@ Se mantienen visibles las siguientes condiciones: tasas de pobreza de 2019 sobre
 
 Los umbrales son criterios operativos de exposición y no umbrales universales de daño. La superposición de cuatro mapas RP100 no representa un evento conjunto RP100 ni simultaneidad de amenazas. La población expuesta no equivale a damnificados, pérdidas ni probabilidades individuales de daño.
 
-Con PGA ≥0,10 g, casi toda la población con dato sísmico válido supera el umbral: el mapa tiene un mínimo válido de 0,20139 g. Esto explica que la unión sea 99,95%. En este escenario. el viento huracanado ≥20 m/s comprende aproximadamente 2.967.809 habitantes y el WBGT ≥30 °C comprende 80,79% de la población. Las categorías dependen de estas distribuciones y de los umbrales; el número de amenazas no es una escala de severidad o daño.
+Con PGA ≥0,10 g, casi toda la población con dato sísmico válido supera el umbral: el mapa tiene un mínimo válido de 0,20139 g. Esto explica que la unión sea 99,90%. En este escenario. el viento huracanado ≥33 m/s comprende aproximadamente 0 habitantes y el WBGT ≥30 °C comprende 80,79% de la población. Las categorías dependen de estas distribuciones y de los umbrales; el número de amenazas no es una escala de severidad o daño.
 
 El resultado es apropiado para diagnóstico territorial, comparación exploratoria y discusión de prioridades, manteniendo estas definiciones. Las decisiones sobre impactos, hogares individuales o inversiones que requieran estimación de pérdidas necesitan análisis adicionales de vulnerabilidad y validación específica.
 
 Los comprobantes de esta revisión se conservan en `03_resultados/escenario_base/revision_independiente.json` y `revision_estructura.json`. Los cambios del repositorio deben incorporarse mediante commit y push para quedar disponibles en GitHub.
 
+
+
+## Actualización del escenario base de viento
+
+Se adopta velocidad máxima del viento ≥33 m/s. Con la capa suministrada, ninguna celda con población alcanza este umbral. Se recalcularon las máscaras, los agregados, la sensibilidad de 81 combinaciones y el dashboard; la reconstrucción independiente y las seis pruebas del método pasaron. Se conservan 20, 25 y 33 m/s en la sensibilidad.

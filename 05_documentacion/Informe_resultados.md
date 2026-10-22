@@ -4,30 +4,30 @@ Fecha: 21 de octubre de 2026. Escenario base con los umbrales operativos documen
 
 ## Resultado principal
 
-De 6.352.401 habitantes modelados por WorldPop 2025, **6.349.122 (99,95%)** se localizan en áreas expuestas a una o más amenazas. La unión cuenta cada habitante una sola vez.
+De 6.352.401 habitantes modelados por WorldPop 2025, **6.346.359 (99,90%)** se localizan en áreas expuestas a una o más amenazas. La unión cuenta cada habitante una sola vez.
 
-Para dos o más amenazas, el resultado es **5.351.946 habitantes (84,25%)**. Ambas definiciones se mantienen separadas.
+Para dos o más amenazas, el resultado es **5.135.966 habitantes (80,85%)**. Ambas definiciones se mantienen separadas.
 
 | Escenario | Total expuesta | Pobre expuesta | No pobre expuesta | % de población total |
 |---|---:|---:|---:|---:|
 | Inundación ≥0,1 m | 76.273 | 38.567 | 37.706 | 1,20% |
 | PGA ≥0,10 g | 6.345.298 | 1.756.162 | 4.589.136 | 99,89% |
-| Viento huracanado ≥20 m/s | 2.967.809 | 916.107 | 2.051.702 | 46,72% |
+| Viento huracanado ≥33 m/s | 0 | 0 | 0 | 0,00% |
 | WBGT ≥30 °C | 5.131.930 | 1.339.398 | 3.792.532 | 80,79% |
-| Una o más amenazas | 6.349.122 | 1.757.989 | 4.591.133 | 99,95% |
-| Exactamente 0 amenazas | 3.279 | 1.971 | 1.308 | 0,05% |
-| Exactamente 1 amenazas | 997.176 | 337.699 | 659.477 | 15,70% |
-| Exactamente 2 amenazas | 2.588.291 | 578.875 | 2.009.416 | 40,75% |
-| Exactamente 3 amenazas | 2.707.070 | 810.877 | 1.896.193 | 42,61% |
-| Exactamente 4 amenazas | 56.586 | 30.539 | 26.047 | 0,89% |
+| Una o más amenazas | 6.346.359 | 1.756.429 | 4.589.930 | 99,90% |
+| Exactamente 0 amenazas | 6.042 | 3.531 | 2.511 | 0,10% |
+| Exactamente 1 amenazas | 1.210.392 | 415.584 | 794.808 | 19,05% |
+| Exactamente 2 amenazas | 5.064.791 | 1.303.991 | 3.760.799 | 79,73% |
+| Exactamente 3 amenazas | 71.176 | 36.853 | 34.322 | 1,12% |
+| Exactamente 4 amenazas | 0 | 0 | 0 | 0,00% |
 
 ## Comparación por grupo poblacional
 
 | Grupo | Población base | Una o más amenazas | % del propio grupo | Dos o más amenazas | % del propio grupo |
 |---|---:|---:|---:|---:|---:|
-| Total | 6.352.401 | 6.349.122 | 99,95% | 5.351.946 | 84,25% |
-| Pobre | 1.759.960 | 1.757.989 | 99,89% | 1.420.290 | 80,70% |
-| No pobre | 4.592.441 | 4.591.133 | 99,97% | 3.931.656 | 85,61% |
+| Total | 6.352.401 | 6.346.359 | 99,90% | 5.135.966 | 80,85% |
+| Pobre | 1.759.960 | 1.756.429 | 99,80% | 1.340.845 | 76,19% |
+| No pobre | 4.592.441 | 4.589.930 | 99,95% | 3.795.122 | 82,64% |
 
 ## Lectura del resultado
 
@@ -70,7 +70,7 @@ Asignación al municipio más cercano: 28.511 habitantes en 14.762 celdas. Dista
 Población sobre ausencia de dato válido de amenaza (tratada como cero exposición):
 - Inundación ≥0,1 m: 6.276.128 habitantes; de ellos 16 fuera de la extensión del archivo.
 - PGA ≥0,10 g: 7.103 habitantes; de ellos 34 fuera de la extensión del archivo.
-- Viento huracanado ≥20 m/s: 72.883 habitantes; de ellos 898 fuera de la extensión del archivo.
+- Viento huracanado ≥33 m/s: 72.883 habitantes; de ellos 898 fuera de la extensión del archivo.
 - WBGT ≥30 °C: 0 habitantes; de ellos 0 fuera de la extensión del archivo.
 
 Todos los balances pasaron con errores menores a 0,00001 personas: calibración municipal, pobre + no pobre = total, categorías 0–4 = población y categorías 1–4 = unión. Seis pruebas unitarias verificaron empates, ponderación poblacional, tasas extremas, operadores y conteo de la unión.

@@ -173,7 +173,7 @@ Para cada centro WorldPop se consulta el píxel contenedor en la grilla nativa d
 |---|---|
 | Inundación | Profundidad **≥0,1 m** |
 | Sismo | PGA **≥0,10 g** |
-| Viento huracanado | Velocidad del viento máxima **≥20 m/s** |
+| Viento huracanado | Velocidad del viento máxima **≥33 m/s** |
 | Calor | WBGT **≥30 °C** |
 
 La ausencia de cobertura y NoData se computan como cero exposición a esa amenaza, conservando la población. Los indicadores de cobertura se guardan para reconocer esta limitación.

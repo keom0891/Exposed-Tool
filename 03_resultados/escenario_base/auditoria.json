@@ -1,5 +1,5 @@
 {
-  "fecha_utc": "2026-10-22T02:44:46.407214+00:00",
+  "fecha_utc": "2026-10-22T19:04:38.018234+00:00",
   "parametros": {
     "inundacion": {
       "umbral": 0.1,
@@ -36,7 +36,7 @@
       "celdas_sin_dato": 4140
     },
     "viento": {
-      "umbral": 20.0,
+      "umbral": 33.0,
       "operador": ">=",
       "unidad": "m/s",
       "crs": "EPSG:4326",
@@ -99,36 +99,36 @@
     "base_total": 6352400.968259584,
     "inundacion_total": 76272.81136933177,
     "sismo_total": 6345297.857339593,
-    "viento_total": 2967808.803157615,
+    "viento_total": 0.0,
     "calor_total": 5131930.019341282,
-    "union_total": 6349122.168862944,
-    "numero_0_total": 3278.799396640359,
-    "numero_1_total": 997176.007610591,
-    "numero_2_total": 2588290.5226706294,
-    "numero_3_total": 2707070.1160709215,
-    "numero_4_total": 56585.522510801326,
+    "union_total": 6346358.625765589,
+    "numero_0_total": 6042.342493994878,
+    "numero_1_total": 1210392.2551411227,
+    "numero_2_total": 5064790.678964315,
+    "numero_3_total": 71175.69166015048,
+    "numero_4_total": 0.0,
     "base_pobre": 1759960.1786898323,
     "inundacion_pobre": 38567.07081697893,
     "sismo_pobre": 1756161.5106613464,
-    "viento_pobre": 916106.569607096,
+    "viento_pobre": 0.0,
     "calor_pobre": 1339398.1755313082,
-    "union_pobre": 1757988.9483753883,
-    "numero_0_pobre": 1971.2303144441244,
-    "numero_1_pobre": 337698.7095613801,
-    "numero_2_pobre": 578874.6886857639,
-    "numero_3_pobre": 810876.9608291554,
-    "numero_4_pobre": 30538.58929908881,
+    "union_pobre": 1756428.7086668212,
+    "numero_0_pobre": 3531.470023010943,
+    "numero_1_pobre": 415584.02836135344,
+    "numero_2_pobre": 1303991.312268124,
+    "numero_3_pobre": 36853.368037344015,
+    "numero_4_pobre": 0.0,
     "base_no_pobre": 4592440.789569752,
     "inundacion_no_pobre": 37705.74055235284,
     "sismo_no_pobre": 4589136.346678247,
-    "viento_no_pobre": 2051702.2335505194,
+    "viento_no_pobre": 0.0,
     "calor_no_pobre": 3792531.8438099744,
-    "union_no_pobre": 4591133.2204875555,
-    "numero_0_no_pobre": 1307.5690821962348,
-    "numero_1_no_pobre": 659477.2980492109,
-    "numero_2_no_pobre": 2009415.8339848656,
-    "numero_3_no_pobre": 1896193.1552417665,
-    "numero_4_no_pobre": 26046.933211712516
+    "union_no_pobre": 4589929.917098768,
+    "numero_0_no_pobre": 2510.8724709839353,
+    "numero_1_no_pobre": 794808.2267797695,
+    "numero_2_no_pobre": 3760799.366696192,
+    "numero_3_no_pobre": 34322.32362280646,
+    "numero_4_no_pobre": 0.0
   },
   "archivos": [
     {
@@ -199,5 +199,5 @@
     "geopandas": "1.1.3",
     "rasterio": "1.4.4"
   },
-  "duracion_segundos": 45.09169936180115
+  "duracion_segundos": 36.47485303878784
 }

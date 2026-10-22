@@ -21,7 +21,7 @@ def main():
  def pct(v,d):return f'{100*v/d:.2f}'.replace('.',',')+'%'
  groups=['total','pobre','no_pobre']; labels={'total':'Total','pobre':'Pobre','no_pobre':'No pobre'}
  lines=['# Población expuesta a amenazas RP100 — El Salvador','','Fecha: 21 de octubre de 2026. Escenario base con los umbrales operativos documentados.','','## Resultado principal','',f'De {num(t["base_total"])} habitantes modelados por WorldPop 2025, **{num(t["union_total"])} ({pct(t["union_total"],t["base_total"])})** se localizan en áreas expuestas a una o más amenazas. La unión cuenta cada habitante una sola vez.', '', f'Para dos o más amenazas, el resultado es **{num(sum(t[f"numero_{k}_total"] for k in [2,3,4]))} habitantes ({pct(sum(t[f"numero_{k}_total"] for k in [2,3,4]),t["base_total"])})**. Ambas definiciones se mantienen separadas.','','| Escenario | Total expuesta | Pobre expuesta | No pobre expuesta | % de población total |','|---|---:|---:|---:|---:|']
- names={'inundacion':'Inundación ≥0,1 m','sismo':'PGA ≥0,10 g','viento':'Viento huracanado ≥20 m/s','calor':'WBGT ≥30 °C','union':'Una o más amenazas',**{f'numero_{k}':f'Exactamente {k} amenazas' for k in range(5)}}
+ names={'inundacion':'Inundación ≥0,1 m','sismo':'PGA ≥0,10 g','viento':'Viento huracanado ≥33 m/s','calor':'WBGT ≥30 °C','union':'Una o más amenazas',**{f'numero_{k}':f'Exactamente {k} amenazas' for k in range(5)}}
  for k,label in names.items():lines.append('| '+label+' | '+' | '.join(num(t[f'{k}_{g}']) for g in groups)+' | '+pct(t[k+'_total'],t['base_total'])+' |')
  lines+=['','## Comparación por grupo poblacional','','| Grupo | Población base | Una o más amenazas | % del propio grupo | Dos o más amenazas | % del propio grupo |','|---|---:|---:|---:|---:|---:|']
  for g in groups:

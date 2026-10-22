@@ -9,5 +9,6 @@
   "carpetas_legacy_ausentes": true,
   "entrada_unica": "index.html",
   "configuracion_windows_verificada": true,
-  "hash_html": "a2bf8177b6fd147d73c609009104d5b4780a4d7bed32e070c2f1b59f4e3d2881"
+  "hash_html": "bc117275ae0c96d470b95d9742122b4ac02ac0a032102ec90cd805a5f1777bad",
+  "umbral_base_viento": 33.0
 }

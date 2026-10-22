@@ -2,7 +2,7 @@
 const D=window.GAIA_DATA,S=window.GAIA_SENSITIVITY,F=D.municipios.features,$=id=>document.getElementById(id);
 const number=new Intl.NumberFormat('es-SV',{maximumFractionDigits:0}),dec=new Intl.NumberFormat('es-SV',{minimumFractionDigits:2,maximumFractionDigits:2});
 const names={total:'Población total',pobre:'Población pobre',no_pobre:'Población no pobre',union:'Una o más amenazas',dos_o_mas:'Dos o más amenazas',inundacion:'Inundación',sismo:'Sismo',viento:'Viento huracanado',calor:'Ola de calor',numero_0:'Ninguna amenaza',numero_1:'Exactamente una',numero_2:'Exactamente dos',numero_3:'Exactamente tres',numero_4:'Exactamente cuatro'};
-const thresholds={inundacion:'Profundidad ≥0,1 m',sismo:'Aceleración pico del terreno (PGA) ≥0,10 g',viento:'Velocidad del viento máxima ≥20 m/s',calor:'Temperatura de Globo y Bulbo Húmedo (WBGT) ≥30 °C'};
+const thresholds={inundacion:'Profundidad ≥0,1 m',sismo:'Aceleración pico del terreno (PGA) ≥0,10 g',viento:'Velocidad del viento máxima ≥33 m/s',calor:'Temperatura de Globo y Bulbo Húmedo (WBGT) ≥30 °C'};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pct=(n,d)=>d>0?100*n/d:null,fmtPct=x=>x===null?'Sin población':dec.format(x)+'%',nf=x=>number.format(x),props=f=>f.properties;
 function value(p,key,g){return key==='dos_o_mas'?[2,3,4].reduce((s,k)=>s+p[`numero_${k}_${g}`],0):p[`${key}_${g}`];}
