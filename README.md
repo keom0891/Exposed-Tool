@@ -173,8 +173,8 @@ Para cada centro WorldPop se consulta el píxel contenedor en la grilla nativa d
 |---|---|
 | Inundación | Profundidad **≥0,1 m** |
 | Sismo | PGA **≥0,10 g** |
-| Viento | Ráfaga de 3 segundos **≥25 m/s** |
-| Calor | WBGT **>30 °C** |
+| Viento huracanado | Ráfaga de 3 segundos **≥20 m/s** |
+| Calor | WBGT **≥30 °C** |
 
 La ausencia de cobertura y NoData se computan como cero exposición a esa amenaza, conservando la población. Los indicadores de cobertura se guardan para reconocer esta limitación.
 
@@ -198,8 +198,8 @@ Se evalúa el producto cartesiano completo de los siguientes niveles:
 |---|---|
 | Inundación | ≥0,10 / ≥0,15 / ≥0,30 / ≥0,50 m |
 | Sismo | ≥0,05 / ≥0,10 / ≥0,15 / ≥0,20 / ≥0,25 g |
-| Viento | ≥20 / ≥25 / ≥33 m/s |
-| Calor | >28 / >30 / >32 °C WBGT |
+| Viento huracanado | ≥20 / ≥25 / ≥33 m/s |
+| Calor | ≥28 / ≥30 / ≥32 °C WBGT |
 
 Se generan **180 combinaciones**, incluido el escenario base. Se conservan los mapas RP100 y se modifican sus umbrales de intensidad. La comparación de sensibilidad es nacional; los mapas y resultados municipales del dashboard corresponden al escenario base.
 

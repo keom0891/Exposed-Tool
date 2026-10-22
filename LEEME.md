@@ -26,4 +26,4 @@ Edite el diseño y los textos en `02_codigo/dashboard`; después reconstruya la 
 
 La ejecución completa sustituye los resultados anteriores. Cierre las capas de resultados abiertas en QGIS antes de recalcular. Conserve juntos todos los componentes de los shapefiles. La revisión matemática se regenera mediante `02_codigo/verificar.py`.
 
-Escenario vigente: inundación ≥0,1 m; PGA ≥0,10 g; ráfaga de 3 segundos ≥25 m/s; WBGT >30 °C. Los metadatos RP100, WBGT, ráfagas y las tasas de pobreza de personas fueron confirmados para este caso. La distribución intramunicipal de pobreza por RWI es un supuesto de modelación; la exposición potencial no equivale a daño.
+Escenario vigente: inundación ≥0,1 m; PGA ≥0,10 g; viento huracanado ≥20 m/s; WBGT ≥30 °C. Los metadatos RP100, WBGT, ráfagas y las tasas de pobreza de personas fueron confirmados para este caso. La distribución intramunicipal de pobreza por RWI es un supuesto de modelación; la exposición potencial no equivale a daño.

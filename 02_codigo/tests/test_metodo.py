@@ -14,6 +14,7 @@ class MethodTests(unittest.TestCase):
  def test_mask_thresholds_and_missing(self):
   a=np.array([.09,.1,.11,np.nan],dtype='float32');np.testing.assert_array_equal(exposure_mask(a,np.isfinite(a),.1,'>='),[False,True,True,False])
   np.testing.assert_array_equal(exposure_mask(np.array([29,30,31],dtype='float32'),[True]*3,30,'>'),[False,False,True])
+  np.testing.assert_array_equal(exposure_mask(np.array([29,30,31],dtype='float32'),[True]*3,30,'>='),[False,True,True])
  def test_union_and_exact_categories(self):
   m=np.array([[1,1,0,0],[1,0,1,0],[0,1,1,0]],dtype='uint8');n=m.sum(axis=0);p=np.array([5,10,20,30]);self.assertEqual(p[n>0].sum(),sum(p[n==k].sum() for k in range(1,5)));self.assertEqual(p.sum(),sum(p[n==k].sum() for k in range(5)))
 if __name__=='__main__':unittest.main()

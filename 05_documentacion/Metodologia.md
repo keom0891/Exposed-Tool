@@ -30,8 +30,8 @@ El análisis utiliza los cuatro mapas como escenarios RP100; no verifica de form
 |---|---|
 | Inundación | Profundidad ≥0,1 m |
 | Sismo | PGA ≥0,10 g |
-| Viento | Ráfaga máxima de 3 segundos ≥25 m/s |
-| Calor | WBGT >30 °C |
+| Viento huracanado | Viento huracanado ≥20 m/s |
+| Calor | WBGT ≥30 °C |
 
 Ausencia de cobertura o NoData se interpreta como cero exposición a esa amenaza, como criterio operativo. La población se conserva. Los indicadores de dato válido se mantienen en el detalle.
 
@@ -43,7 +43,7 @@ Los porcentajes de exposición de cada grupo usan su propia población total com
 
 ## Sensibilidad
 
-Factorial completo: inundación 0,1/0,15/0,30/0,50 m; PGA 0,05/0,10/0,15/0,20/0,25 g; viento 20/25/33 m/s; WBGT >28/>30/>32 °C. Son 180 combinaciones. El escenario base está identificado; no se seleccionan resultados por un porcentaje objetivo.
+Factorial completo: inundación 0,1/0,15/0,30/0,50 m; PGA 0,05/0,10/0,15/0,20/0,25 g; viento 20/25/33 m/s; WBGT ≥28/≥30/≥32 °C. Son 180 combinaciones. El escenario base está identificado; no se seleccionan resultados por un porcentaje objetivo.
 
 ## Interpretación
 

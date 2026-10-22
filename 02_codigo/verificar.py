@@ -18,7 +18,7 @@ for h,config in a['parametros'].items():
  with rasterio.open(r/'01_insumos'/'amenazas'/fn) as src:
   assert src.crs.to_epsg()==4326
   inv=~src.transform;ccf,rrf=inv*(c.longitud.to_numpy(),c.latitud.to_numpy());rr=np.floor(rrf).astype(int);cc=np.floor(ccf).astype(int);inside=(rr>=0)&(cc>=0)&(rr<src.height)&(cc<src.width);b=src.read(1,masked=True);v=np.zeros(len(c),b.dtype);ok=np.zeros(len(c),bool);v[inside]=b.data[rr[inside],cc[inside]];ok[inside]=~np.ma.getmaskarray(b)[rr[inside],cc[inside]];ok &= np.isfinite(v)
-  for th in levels[h]:cache[h,th]=ok&((v>th) if h=='calor' else (v>=np.float32(th)))
+  for th in levels[h]:cache[h,th]=ok&((v>=np.asarray(th,dtype=v.dtype)) if config['operador']=='>=' else (v>np.asarray(th,dtype=v.dtype)))
   masks[h]=cache[h,config['umbral']];checks[h+'_diferencias_mascara']=int(np.count_nonzero(masks[h]!=c['exp_'+h]));checks[h+'_diferencias_cobertura']=int(np.count_nonzero(ok!=c['dato_valido_'+h]))
 count=sum(v.astype(int) for v in masks.values());checks['diferencias_numero_amenazas']=int(np.count_nonzero(count!=c.numero_amenazas));weights={g:c[g].to_numpy() for g in ['total','pobre','no_pobre']};selectors={'base':np.ones(len(c),bool),**masks,'union':count>=1,**{f'numero_{k}':count==k for k in range(5)}}
 checks['error_agregados_nacionales']=max(abs(float(w[sel].sum())-float(a['totales'][key+'_'+group])) for key,sel in selectors.items() for group,w in weights.items())

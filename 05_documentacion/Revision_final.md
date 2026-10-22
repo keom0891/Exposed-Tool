@@ -9,7 +9,7 @@ La implementación y los resultados son coherentes con los criterios documentado
 - 971.376 celdas WorldPop positivas, sin duplicación y con conservación de 6.352.400,97 habitantes.
 - Asignación municipal y asignación del punto RWI más cercano reconstruidas: cero discrepancias.
 - Calibración municipal ponderada por habitantes y fracción común para empates: tasas originales preservadas y promedios imputados reproducidos.
-- Cuatro máscaras de amenaza y sus coberturas reconstruidas: cero discrepancias. WBGT usa desigualdad estricta; las otras amenazas incluyen igualdad.
+- Cuatro máscaras de amenaza y sus coberturas reconstruidas: cero discrepancias. Las cuatro amenazas incluyen igualdad en el umbral.
 - Pobre + no pobre = total; categorías 0–4 = población base; categorías 1–4 = unión; dos o más = categorías 2–4. Agregados nacionales y municipales consistentes, con diferencias numéricas inferiores a 0,00001 habitantes.
 - Las 180 combinaciones de sensibilidad reproducen los totales de una o más y dos o más amenazas. El escenario base es único y utiliza PGA ≥0,10 g.
 - Huellas SHA-256 de los insumos coincidentes. Seis pruebas unitarias satisfactorias.
@@ -27,10 +27,10 @@ La implementación y los resultados son coherentes con los criterios documentado
 
 ## Resultado del escenario base
 
-Inundación ≥0,1 m; PGA ≥0,10 g; ráfaga de 3 segundos ≥25 m/s; WBGT >30 °C.
+Inundación ≥0,1 m; PGA ≥0,10 g; viento huracanado ≥20 m/s; WBGT ≥30 °C.
 
-- Al menos una amenaza: 6.346.358,63 habitantes, **99,90%** de la población modelada.
-- Dos o más amenazas: 5.136.101,99 habitantes, **80,85%**.
+- Al menos una amenaza: 6.349.122,17 habitantes, **99,95%** de la población modelada.
+- Dos o más amenazas: 5.351.946,16 habitantes, **84,25%**.
 
 Los porcentajes de población pobre y no pobre usan como denominador la población de su propio grupo. Los conteos se calculan sin redondear; el dashboard redondea únicamente para presentación.
 
@@ -66,7 +66,7 @@ Se mantienen visibles las siguientes condiciones: tasas de pobreza de 2019 sobre
 
 Los umbrales son criterios operativos de exposición y no umbrales universales de daño. La superposición de cuatro mapas RP100 no representa un evento conjunto RP100 ni simultaneidad de amenazas. La población expuesta no equivale a damnificados, pérdidas ni probabilidades individuales de daño.
 
-Con PGA ≥0,10 g, casi toda la población con dato sísmico válido supera el umbral: el mapa tiene un mínimo válido de 0,20139 g. Esto explica que la unión sea 99,90%. En este escenario, el viento ≥25 m/s comprende aproximadamente 171 habitantes y el WBGT >30 °C comprende 80,79% de la población. Las categorías dependen de estas distribuciones y de los umbrales; el número de amenazas no es una escala de severidad o daño.
+Con PGA ≥0,10 g, casi toda la población con dato sísmico válido supera el umbral: el mapa tiene un mínimo válido de 0,20139 g. Esto explica que la unión sea 99,95%. En este escenario. el viento huracanado ≥20 m/s comprende aproximadamente 2.967.809 habitantes y el WBGT ≥30 °C comprende 80,79% de la población. Las categorías dependen de estas distribuciones y de los umbrales; el número de amenazas no es una escala de severidad o daño.
 
 El resultado es apropiado para diagnóstico territorial, comparación exploratoria y discusión de prioridades, manteniendo estas definiciones. Las decisiones sobre impactos, hogares individuales o inversiones que requieran estimación de pérdidas necesitan análisis adicionales de vulnerabilidad y validación específica.
 

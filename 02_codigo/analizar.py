@@ -14,8 +14,8 @@ METRIC_CRS = 32616
 HAZARDS = {
  'inundacion': ('Inundacion_PR100.tif', 0.1, '>=', 'm'),
  'sismo': ('Sismo_PR100.tif', 0.10, '>=', 'g'),
- 'viento': ('Viento_PR100.tif', 25.0, '>=', 'm/s'),
- 'calor': ('Teperature_PR100.tif', 30.0, '>', '°C WBGT'),
+ 'viento': ('Viento_PR100.tif', 20.0, '>=', 'm/s'),
+ 'calor': ('Teperature_PR100.tif', 30.0, '>=', '°C WBGT'),
 }
 
 def calibrate(population, rwi, rate):
