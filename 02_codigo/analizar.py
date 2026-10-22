@@ -159,7 +159,7 @@ def main():
  dump(out/'auditoria.json',manifest)
  print('7/7 Preparando datos del dashboard',flush=True)
  # Equal-distance projected coordinates, simplified only for display, not analysis.
- display=municipalities.to_crs(METRIC_CRS);display.geometry=display.geometry.simplify(180,preserve_topology=True)
+ display=municipalities.to_crs(METRIC_CRS);display.geometry=display.geometry.simplify(81,preserve_topology=True)
  display.rwi_corte=display.rwi_corte.astype(object).where(display.rwi_corte.notna(),None)
  features=json.loads(display.to_json(na='null',drop_id=True))
  payload=dict(nacional=national,municipios=features,imputaciones=imputed,auditoria={k:v for k,v in manifest.items() if k not in ['archivos','versiones']})

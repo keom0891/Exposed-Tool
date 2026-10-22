@@ -11,7 +11,7 @@ La implementación y los resultados son coherentes con los criterios documentado
 - Calibración municipal ponderada por habitantes y fracción común para empates: tasas originales preservadas y promedios imputados reproducidos.
 - Cuatro máscaras de amenaza y sus coberturas reconstruidas: cero discrepancias. Las cuatro amenazas incluyen igualdad en el umbral.
 - Pobre + no pobre = total; categorías 0–4 = población base; categorías 1–4 = unión; dos o más = categorías 2–4. Agregados nacionales y municipales consistentes, con diferencias numéricas inferiores a 0,00001 habitantes.
-- Las 180 combinaciones de sensibilidad reproducen los totales de una o más y dos o más amenazas. El escenario base es único y utiliza PGA ≥0,10 g.
+- Las 81 combinaciones de sensibilidad reproducen los totales de una o más y dos o más amenazas. El escenario base es único y utiliza PGA ≥0,10 g.
 - Huellas SHA-256 de los insumos coincidentes. Seis pruebas unitarias satisfactorias.
 - Explorador de calibración generado desde los valores reales del detalle por celda para 262 unidades con población; cuatro unidades sin población se muestran sin corte. Tasas imputadas en unidades pobladas: La Libertad y San Martín.
 
@@ -46,7 +46,7 @@ Los porcentajes de población pobre y no pobre usan como denominador la poblaci�
 - Las fuentes editables, insumos, resultados y documentación están separados. No permanecen las carpetas del motor anterior ni el acceso duplicado.
 - Ambos accesos Windows comparten `02_codigo/configurar_entorno.cmd`; se comprobó su ejecución en el entorno disponible.
 - La sintaxis de los módulos Python y de los scripts de interacción es válida. Las seis pruebas unitarias pasaron.
-- El HTML es autónomo, sus identificadores son únicos y sus datos coinciden con las fuentes generadas y la auditoría. Los porcentajes y las categorías de las 180 combinaciones son consistentes.
+- El HTML es autónomo, sus identificadores son únicos y sus datos coinciden con las fuentes generadas y la auditoría. Los porcentajes y las categorías de las 81 combinaciones son consistentes.
 - La reconstrucción independiente verificó 971.376 celdas, las asignaciones municipales y RWI, las cuatro máscaras y coberturas, los agregados y la sensibilidad. No se detectaron discrepancias de clasificación; las diferencias numéricas son inferiores a 0,00001 habitantes.
 - Se corrigió el control de huellas para comprobar los insumos locales del repositorio, conservando las rutas históricas del registro como procedencia. Se añadió una comprobación explícita de EPSG:4326 en sensibilidad para rechazar insumos incompatibles, en lugar de procesarlos silenciosamente. Ninguna corrección modifica las cifras actuales.
 

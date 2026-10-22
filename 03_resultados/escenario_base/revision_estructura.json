@@ -4,7 +4,7 @@
   "datos_html_coinciden_con_fuentes": true,
   "resultados_y_auditoria_coinciden": true,
   "porcentajes_y_categorias_sensibilidad_coherentes": true,
-  "escenarios": 180,
+  "escenarios": 81,
   "zip_coincide": true,
   "carpetas_legacy_ausentes": true,
   "entrada_unica": "index.html",

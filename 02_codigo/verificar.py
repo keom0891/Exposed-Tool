@@ -12,7 +12,7 @@ g=c.groupby(['codigo_municipal','rwi'],sort=True).agg(p=('total','sum'),poor=('p
 orig=pd.read_csv(r/'01_insumos'/'pobreza'/'slv_pov_2.csv');checks['tasas_originales_preservadas']=bool(np.allclose(m.set_index('ADM2_PCODE').loc[orig.loc[orig.POVERTY_RATE.notna(),'ADM2_PCODE'],'POVERTY_RATE'],orig.loc[orig.POVERTY_RATE.notna(),'POVERTY_RATE']));checks['error_promedios_imputados']=max(abs(z['tasa']-np.mean(z['tasas_vecinos'])) for z in im)
 print('Población, calibración y tasas verificadas',flush=True)
 # Full independent resampling against source rasters, followed by all aggregates.
-masks={};cache={};levels={'inundacion':[.1,.15,.3,.5],'sismo':[.05,.1,.15,.2,.25],'viento':[20,25,33],'calor':[28,30,32]}
+masks={};cache={};levels={'inundacion':[.1,.2,.3],'sismo':[.1,.2,.3],'viento':[20,25,33],'calor':[28,30,32]}
 for h,config in a['parametros'].items():
  fn={'inundacion':'Inundacion_PR100.tif','sismo':'Sismo_PR100.tif','viento':'Viento_PR100.tif','calor':'Teperature_PR100.tif'}[h]
  with rasterio.open(r/'01_insumos'/'amenazas'/fn) as src:
@@ -55,7 +55,7 @@ r=Path(__file__).resolve().parent.parent;c=pd.read_csv(r/'03_resultados'/'escena
 
 for key,value in report['checks'].items():
  if isinstance(value,bool): assert value,key
- elif key=='escenarios_sensibilidad': assert value==180
+ elif key=='escenarios_sensibilidad': assert value==81
  else: assert abs(value)<1e-5,(key,value)
 for key,value in checks.items(): assert abs(value)<1e-5,(key,value)
 import subprocess

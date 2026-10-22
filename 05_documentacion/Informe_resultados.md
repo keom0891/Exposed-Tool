@@ -37,11 +37,11 @@ Los porcentajes representan exposición potencial a los mapas suministrados. No 
 
 ## Sensibilidad documentada
 
-Se evaluaron las 180 combinaciones de profundidad 0,1/0,15/0,30/0,50 m; PGA 0,05/0,10/0,15/0,20/0,25 g; viento 20/25/33 m/s; y WBGT ≥28/≥30/≥32 °C. Se evalúan todas las combinaciones de los niveles documentados, sin seleccionar escenarios por el porcentaje obtenido.
+Se evaluaron las 81 combinaciones de profundidad 0,1/0,2/0,3 m; PGA 0,1/0,2/0,3 g; viento 20/25/33 m/s; y WBGT ≥28/≥30/≥32 °C. Se evalúan todas las combinaciones de los niveles documentados, sin seleccionar escenarios por el porcentaje obtenido.
 
-Una o más amenazas: **93.71%–100.00%**. Dos o más amenazas: **6.56%–99.93%**. El extremo superior de una o más amenazas es 99,9954%, aunque al redondear a dos decimales aparezca 100,00%.
+Una o más amenazas: **83.18%–100.00%**. Dos o más amenazas: **6.29%–99.93%**. El extremo superior de una o más amenazas es 99,9954%, aunque al redondear a dos decimales aparezca 100,00%.
 
-Los umbrales 0,05/0,10/0,15/0,20 g están por debajo del mínimo válido del mapa sísmico (0,20139 g) y generan la misma máscara. El escenario base usa 0,10 g. El nivel alternativo 0,25 g reduce la exposición sísmica respecto al escenario base. La sensibilidad no constituye una validación del modelo de amenaza.
+Los umbrales sísmicos 0,10 y 0,20 g están por debajo del mínimo válido del mapa (0,20139 g) y generan la misma máscara. El escenario base usa 0,10 g; el nivel de 0,30 g reduce la exposición sísmica. La sensibilidad no constituye una validación del modelo de amenaza.
 
 ## Reglas aplicadas
 
@@ -84,7 +84,7 @@ La resolución de WBGT es aproximadamente 27 km, de viento 2 km y de población/
 - `index.html`: dashboard autónomo, funciona sin internet.
 - `03_resultados/escenario_base/indicadores.csv`: resultados nacionales y por unidad, por amenaza, unión y 0–4 amenazas.
 - `03_resultados/escenario_base/municipios.csv`: atributos completos por unidad.
-- `03_resultados/escenario_base/sensibilidad.csv`: las 180 combinaciones completas.
+- `03_resultados/escenario_base/sensibilidad.csv`: las 81 combinaciones completas.
 - `03_resultados/escenario_base/resultados_municipales.gpkg`: resultados espaciales.
 - `03_resultados/escenario_base/poblacion_y_exposicion.tif`: población total/pobre/no pobre, número de amenazas y combinación en bits.
 - `03_resultados/escenario_base/celdas.csv.gz`: detalle por celda con RWI, distancias, grupo poblacional, exposición y cobertura.

@@ -14,7 +14,7 @@ La herramienta permite:
 - Distribuir la población pobre y no pobre dentro de cada municipio mediante un ordenamiento por RWI, calibrado a su tasa de pobreza.
 - Consultar la intensidad de cada amenaza en el centro de las celdas de población y aplicar umbrales operativos.
 - Estimar población total, pobre y no pobre expuesta a cada amenaza, a su unión y a exactamente cero, una, dos, tres o cuatro amenazas.
-- Comparar **180 combinaciones de umbrales** mediante un análisis de sensibilidad.
+- Comparar **81 combinaciones de umbrales** mediante un análisis de sensibilidad.
 - Generar tablas, capas geoespaciales, trazabilidad de insumos y un dashboard interactivo autónomo.
 - Verificar la conservación de población, la calibración municipal y la consistencia de los resultados mediante una reconstrucción independiente y pruebas unitarias.
 
@@ -196,12 +196,12 @@ Se evalúa el producto cartesiano completo de los siguientes niveles:
 
 | Amenaza | Niveles |
 |---|---|
-| Inundación | ≥0,10 / ≥0,15 / ≥0,30 / ≥0,50 m |
-| Sismo | ≥0,05 / ≥0,10 / ≥0,15 / ≥0,20 / ≥0,25 g |
+| Inundación | ≥0,10 / ≥0,20 / ≥0,30 m |
+| Sismo | ≥0,10 / ≥0,20 / ≥0,30 g |
 | Viento huracanado | ≥20 / ≥25 / ≥33 m/s |
 | Calor | ≥28 / ≥30 / ≥32 °C WBGT |
 
-Se generan **180 combinaciones**, incluido el escenario base. Se conservan los mapas RP100 y se modifican sus umbrales de intensidad. La comparación de sensibilidad es nacional; los mapas y resultados municipales del dashboard corresponden al escenario base.
+Se generan **81 combinaciones**, incluido el escenario base. Se conservan los mapas RP100 y se modifican sus umbrales de intensidad. La comparación de sensibilidad es nacional; los mapas y resultados municipales del dashboard corresponden al escenario base.
 
 ### Modificar parámetros
 
@@ -218,7 +218,7 @@ La implementación contiene nombres de archivo, proyección de distancias y refe
 | `celdas.csv.gz` | Detalle de población, pobreza, RWI, distancias, cobertura y exposición por celda. |
 | `resultados_municipales.gpkg` | Geometrías municipales y resultados en GeoPackage. |
 | `poblacion_y_exposicion.tif` | Cinco bandas: población total, pobre, no pobre, número de amenazas y combinación de máscaras en bits. |
-| `sensibilidad.csv` | Resultados de las 180 combinaciones para los tres grupos poblacionales. |
+| `sensibilidad.csv` | Resultados de las 81 combinaciones para los tres grupos poblacionales. |
 | `sensibilidad_resumen.json` | Niveles, escenario base y rangos nacionales de sensibilidad. |
 | `calibracion_municipal.json` | Distribución de población por RWI y detalle del corte municipal. |
 | `tasas_imputadas.json` | Tasas completadas, método y vecinos utilizados. |

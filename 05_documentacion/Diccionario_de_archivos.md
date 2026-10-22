@@ -7,7 +7,7 @@ Todos los resultados vigentes están en `03_resultados/escenario_base`.
 - `resultados_municipales.gpkg`: la misma información con polígonos originales, sin simplificación de visualización.
 - `celdas.csv.gz`: detalle de celdas positivas de WorldPop; fila/columna, coordenadas, municipio, total/pobre/no pobre, RWI, error original y distancias, indicadores de exposición, validez del dato y número de amenazas.
 - `poblacion_y_exposicion.tif`: cinco bandas en la grilla WorldPop: total, pobre, no pobre, número de amenazas y combinación en bits (inundación 1, sismo 2, viento 4, calor 8). NoData = -99999. Se conserva precisión Float64 en los cálculos y CSV; el GeoTIFF exporta Float32.
-- `sensibilidad.csv`: las 180 combinaciones nacionales y sus porcentajes por grupo.
+- `sensibilidad.csv`: las 81 combinaciones nacionales y sus porcentajes por grupo.
 - `sensibilidad_resumen.json`: niveles, escenario base y rangos de sensibilidad.
 - `tasas_imputadas.json`: vecinos, tasas originales y promedio usado.
 - `asignaciones_fuera_limites.csv`: centros asignados por municipio más cercano, población y distancia.
